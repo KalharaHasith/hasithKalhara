@@ -1,0 +1,136 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background-color: #222831;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ac-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px;
+}
+
+.nav__links li {
+  list-style-type: none;
+}
+
+.nav__links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav .hamburger {
+  padding: 25px 25px 0 0;
+  display: none;
+  cursor: pointer;
+}
+
+.nav .hamburger__line {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px;
+}
+
+@media screen and (max-width: 1024px) {
+  body .nav__links {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .nav__links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #393e46;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 75%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  body .nav__links li {
+    opacity: 0;
+  }
+  body .nav .hamburger {
+    display: block;
+  }
+  body .nav .active {
+    background-color: red !important;
+  }
+  nav .active {
+    background-color: red !important;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=main.css.map */
