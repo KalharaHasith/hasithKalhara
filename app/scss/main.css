@@ -124,13 +124,10 @@ a:hover {
   body .nav .hamburger {
     display: block;
   }
-  body .nav .active {
-    background-color: red !important;
-  }
-  nav .active {
-    background-color: red !important;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
+}
+
+body nav .active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 /*# sourceMappingURL=main.css.map */

@@ -71,16 +71,13 @@
       .hamburger {
         display: block;
       }
-
-      .active {
-        background-color: red !important;
-      }
     }
   }
+}
 
+body {
   nav {
     .active {
-      background-color: red !important;
       transform: translateX(0%);
     }
   }
