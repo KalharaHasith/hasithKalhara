@@ -54,8 +54,8 @@
       &__links {
         position: absolute;
         right: 0;
-        height: 92vh;
-        top: 8vh;
+        height: 90vh;
+        top: 10vh;
         background-color: $gray;
         display: flex;
         flex-direction: column;
@@ -80,5 +80,30 @@ body {
     .active {
       transform: translateX(0%);
     }
+  }
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle {
+  .line1 {
+    transform: rotate(-45deg translate(-5px, 6px));
+  }
+
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg translate(-5px, -6px));
   }
 }
