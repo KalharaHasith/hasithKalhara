@@ -97,6 +97,9 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   body .nav__links {
     position: absolute;
     right: 0;
@@ -172,5 +175,20 @@ body nav .active {
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
           transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.hero {
+  background-image: url("../../images/dekstop/background_img.png");
+  height: 92vh;
+}
+
+.hero h1 {
+  color: #eeeeee;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url("../../images/mobile/background_img.png");
+  }
 }
 /*# sourceMappingURL=main.css.map */

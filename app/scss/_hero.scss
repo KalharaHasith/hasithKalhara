@@ -1,0 +1,14 @@
+.hero {
+  background-image: url("../../images/dekstop/background_img.png");
+  height: 92vh;
+
+  h1 {
+    color: $secondry;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url("../../images/mobile/background_img.png");
+  }
+}
