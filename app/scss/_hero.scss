@@ -2,13 +2,40 @@
   background-image: url("../../images/dekstop/background_img.png");
   height: 92vh;
 
-  h1 {
+  h1,
+  h2 {
     color: $secondry;
+  }
+
+  h3 {
+    color: $yellow;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .nav {
+    background-color: transparent;
+  }
+
   .hero {
     background-image: url("../../images/mobile/background_img.png");
+  }
+
+  h1,
+  h2,
+  h3 {
+    padding-left: 25px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 20px;
+    padding-top: 218px;
+  }
+  h3 {
+    padding-top: 13px;
   }
 }
