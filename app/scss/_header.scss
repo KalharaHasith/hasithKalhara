@@ -56,18 +56,20 @@
         position: absolute;
         right: 0;
         height: 92vh;
-        top: 8vh;
+        top: 8.5vh;
         background-color: $gray;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+        padding-bottom: 5px;
         width: 75%;
         transform: translateX(100%);
         transition: transform 0.5s ease;
 
         li {
           opacity: 0;
+          padding-bottom: 15px;
         }
       }
       .hamburger {
