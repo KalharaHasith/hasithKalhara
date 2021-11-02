@@ -190,34 +190,77 @@ body nav .active {
 .hero h1,
 .hero h2 {
   color: #eeeeee;
+  padding-left: 55px;
+}
+
+.hero h1 {
+  font-size: 65px;
+}
+
+.hero h2 {
+  padding-top: 205px;
+  font-size: 22px;
 }
 
 .hero h3 {
   color: #ffd369;
-  font-size: 18px;
+  font-size: 19px;
+  padding-left: 55px;
+  padding-top: 15px;
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
+  body {
+    overflow-y: hidden;
+  }
+  body .nav {
     background-color: transparent;
   }
-  .hero {
+  body .hero {
     background-image: url("../../images/mobile/background_img.png");
   }
-  h1,
-  h2,
-  h3 {
-    padding-left: 25px;
+  body .hero h1,
+  body .hero h2,
+  body .hero h3 {
+    padding-left: 35px;
   }
-  h1 {
-    font-size: 44px;
+  body .hero h1 {
+    font-size: 40px;
+    line-height: 45px;
   }
-  h2 {
+  body .hero h2 {
     font-size: 20px;
-    padding-top: 218px;
+    padding-top: 178px;
   }
-  h3 {
+  body .hero h3 {
     padding-top: 13px;
+  }
+  body .hero .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body .hero .social__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 105px 5px 35px 0;
+  }
+  body .hero .social__links li {
+    list-style-type: none;
+  }
+  body .hero .social__links li a {
+    text-decoration: none;
+  }
+  body .hero .social__links li img {
+    width: 30px;
+    padding-right: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */

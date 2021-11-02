@@ -5,37 +5,79 @@
   h1,
   h2 {
     color: $secondry;
+    padding-left: 55px;
+  }
+
+  h1 {
+    font-size: 65px;
+  }
+
+  h2 {
+    padding-top: 205px;
+    font-size: 22px;
   }
 
   h3 {
     color: $yellow;
-    font-size: 18px;
+    font-size: 19px;
+    padding-left: 55px;
+    padding-top: 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    background-color: transparent;
-  }
+  body {
+    overflow-y: hidden;
 
-  .hero {
-    background-image: url("../../images/mobile/background_img.png");
-  }
+    .nav {
+      background-color: transparent;
+    }
 
-  h1,
-  h2,
-  h3 {
-    padding-left: 25px;
-  }
+    .hero {
+      background-image: url("../../images/mobile/background_img.png");
 
-  h1 {
-    font-size: 44px;
-  }
-  h2 {
-    font-size: 20px;
-    padding-top: 218px;
-  }
-  h3 {
-    padding-top: 13px;
+      h1,
+      h2,
+      h3 {
+        padding-left: 35px;
+      }
+
+      h1 {
+        font-size: 40px;
+        line-height: 45px;
+      }
+      h2 {
+        font-size: 20px;
+        padding-top: 178px;
+      }
+      h3 {
+        padding-top: 13px;
+      }
+
+      .social {
+        display: flex;
+        justify-content: flex-end;
+
+        &__links {
+          display: flex;
+          width: 50%;
+          justify-content: space-around;
+          padding: 105px 5px 35px 0;
+
+          li {
+            list-style-type: none;
+
+            a {
+              text-decoration: none;
+            }
+
+            img {
+              width: 30px;
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 }
