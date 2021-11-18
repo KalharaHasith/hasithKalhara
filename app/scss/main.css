@@ -251,16 +251,42 @@ body nav .active {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 105px 5px 35px 0;
+    margin-right: 30px;
+    margin-top: 75px;
   }
   body .hero .social__links li {
     list-style-type: none;
   }
   body .hero .social__links li a {
     text-decoration: none;
+    border-radius: 50%;
+    color: #222831;
+    height: 35px;
+    width: 35px;
+    display: block;
+    background: #eeeeee;
+    text-align: center;
+    -webkit-transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  body .hero .social__links li img {
-    width: 30px;
-    padding-right: 5px;
+  body .hero .social__links li a:hover {
+    color: #fff;
+  }
+  body .hero .social__links li a i {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  body .hero .social .github:hover {
+    background: #333;
+  }
+  body .hero .social .linkedin:hover {
+    background: #0077b5;
+  }
+  body .hero .social .behance:hover {
+    background: #053eff;
+  }
+  body .hero .social .dribbble:hover {
+    background: #f082ac;
   }
 }
 /*# sourceMappingURL=main.css.map */
