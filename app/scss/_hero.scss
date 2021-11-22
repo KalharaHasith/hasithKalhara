@@ -1,6 +1,9 @@
 .hero {
   background-image: url("../../images/dekstop/background_img.png");
-  height: 92vh;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   h1,
   h2 {
@@ -22,6 +25,60 @@
     font-size: 19px;
     padding-left: 55px;
     padding-top: 15px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: flex-end;
+
+    &__links {
+      display: flex;
+      width: 40%;
+      justify-content: space-evenly;
+      margin-right: 20px;
+      margin-top: 180px;
+
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          border-radius: 50%;
+          color: $primary;
+          height: 35px;
+          width: 35px;
+          display: block;
+          background: $secondry;
+          text-align: center;
+          transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+          &:hover {
+            color: $white;
+          }
+
+          i {
+            font-size: 20px;
+            line-height: 35px;
+          }
+        }
+      }
+    }
+
+    .github:hover {
+      background: #333;
+    }
+
+    .linkedin:hover {
+      background: #0077b5;
+    }
+
+    .behance:hover {
+      background: #053eff;
+    }
+
+    .dribbble:hover {
+      background: #f082ac;
+    }
   }
 }
 
@@ -59,54 +116,21 @@
         justify-content: flex-end;
 
         &__links {
-          display: flex;
           width: 50%;
-          justify-content: space-around;
-          padding: 105px 5px 35px 0;
-          margin-right: 30px;
-          margin-top: 75px;
+          margin-right: 20px;
+          margin-top: 200px;
 
           li {
-            list-style-type: none;
-
             a {
-              text-decoration: none;
-              border-radius: 50%;
-              color: $primary;
-              height: 35px;
-              width: 35px;
-              display: block;
-              background: $secondry;
-              text-align: center;
-              transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-              // box-shadow: 0 10px 10px rgba($color: #eeeeee, $alpha: 0.1);
-
-              &:hover {
-                color: $white;
-              }
+              height: 25px;
+              width: 25px;
 
               i {
-                font-size: 20px;
-                line-height: 35px;
+                font-size: 15px;
+                line-height: 25px;
               }
             }
           }
-        }
-
-        .github:hover {
-          background: #333;
-        }
-
-        .linkedin:hover {
-          background: #0077b5;
-        }
-
-        .behance:hover {
-          background: #053eff;
-        }
-
-        .dribbble:hover {
-          background: #f082ac;
         }
       }
     }
